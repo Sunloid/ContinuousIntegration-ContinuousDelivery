@@ -16,4 +16,22 @@ This stage cleans the target repository and compiles the code into a .war or .ja
 - -DskipTests: This flag tells Maven to skip running tests during the build process. It speeds up the build by not executing any test cases, which can be useful if you are confident the code is stable or if you're only interested in building the artifact itself. 
 
 # Stage 3. Test: 
+**sh 'mvn test'**
 
+As you can deduce from the code above this stage only responsible for testing the .war file made by the previous stage. This command is commonly used to verify that the code behaves as expected by running the unit and integration tests.
+
+# Stage 4. Checkstyle Analysis: 
+**sh 'mvn checkstyle:checkstyle'**
+
+The command sh 'mvn checkstyle:checkstyle' is used to run Checkstyle in a Maven project. Here’s what it does:
+- mvn checkstyle:checkstyle: This Maven command calls the Checkstyle plugin to analyze the code for style and formatting issues based on a set of predefined or custom rules (often configured in a checkstyle.xml file).
+- Checkstyle scans the source code and checks it against the coding standards defined in the configuration.
+This command is useful for enforcing code quality and consistency across the codebase.
+
+# Stage 5. Sonar Analysis: 
+This stage is responsible for sending the project to the SonarQube analysis 
+
+- **environment {scannerHome = tool 'sonar4.7'}**
+'sonar4.7' is the name of the SonarQube scanner in the ManageJenkins > Tools page. The makes sure that the scanner used by jenkins is infact sonarqube scanner. Be sure that the name of the sonarqube scanner in tools page is the same as the one over here. 
+
+- **steps {withSonarQubeEnv('sonar') {.......}}**
