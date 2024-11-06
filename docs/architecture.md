@@ -42,3 +42,8 @@ This part of the code makes multiple configuration's in the SonarQube server. It
 Responsible for taking the project through the quality gate in the SonarQube server which needs to manually created and setup first.
 
 ## Stage 7. UploadArtifact
+Responsible for configuring and uploading a artifact to the Nexus repository
+**nexusVersion: 'nexus3'**:
+Mentions the Nexus version to the Jenkins server. 
+
+**nexusUrl: '172.31.4.32:8081'**
