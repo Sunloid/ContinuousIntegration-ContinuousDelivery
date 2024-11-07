@@ -2,7 +2,7 @@
 pipeline {
     agent any
     tools {
-	    maven "Maven3"
+	    maven "MAVEN3"
 	    jdk "OracleJDK8"
 	}
     stages{
@@ -71,7 +71,7 @@ pipeline {
                   nexusVersion: 'nexus3',
                   protocol: 'http',
                   // The IP address below needs to be changed with the whatever the Private IP address of the Nexus Instance is.
-                  nexusUrl: '172.31.4.32:8081',
+                  nexusUrl: '172.31.46.5:8081',
                   groupId: 'QA',
                   version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
                   // Make sure the nexus has a repository with the exact same name below. 

@@ -63,6 +63,8 @@ This file contains step by step all instructions on how to setup up this pipelin
     ![Alt text](<image (13).png>)
     2. SonarQube: For SonarQube go to sonarqube server login with username and password (admin) then account > security and Generate a token. Copy the token and come back to Jenkins server and make a new credentials with the generated token. 
     ![Alt text](<image (14).png>)
+- Go to Manage Jenkins > System and add the following 
+    ![Alt text](<image (17).png>)
 
 ## SonarQube Server Setup 
  - There is not much setup to do in sonarqube server. 
