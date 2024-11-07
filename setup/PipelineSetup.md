@@ -7,3 +7,8 @@ This file contains step by step all instructions on how to setup up this pipelin
 - Maven: Maven is an open-source build automation and project management tool that is primarily used for Java development.
 - Nexus: Nexus is a tool that stores, organizes, and distributes artifacts for development. It's built by Sonatype and is commonly used to host Apache Maven. Developers can use Nexus to control access to and deploy artifacts from a single location.
 - SonarQube: SonarQube is an open-source platform that helps developers and teams improve the quality of their code by analyzing it for bugs, vulnerabilities, and other issues
+
+## AWS SETUP
+1. Security Groups:
+    - Jenkins: Inbound rules
+                ![Alt text](<q1.png>)    
