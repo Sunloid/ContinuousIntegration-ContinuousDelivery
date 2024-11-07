@@ -11,4 +11,4 @@ This file contains step by step all instructions on how to setup up this pipelin
 ## AWS SETUP
 1. Security Groups:
     - Jenkins: Inbound rules
-                ![Alt text](<q1.png>)    
+                ![Alt text](q1.png>)
