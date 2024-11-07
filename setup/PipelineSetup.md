@@ -36,3 +36,12 @@ This file contains step by step all instructions on how to setup up this pipelin
     - Click on advanced details and in the user data section copy paste the code fom the install_SonarQube.sh file
     ![Alt text](<image (8).png>)
     - Launch the instance. 
+
+4. **Nexus Instance Setup::**
+     - Create a EC2 instance with the name of Nexus server. 
+     - Give it the Nexus security group which you just made. 
+     - Use ubuntu linux as the base image. 
+     - For instance type use t2.medium. 
+     ![Alt text](<image (9).png>)
+     - Launch the instance. 
+     - Now connnect to the EC2 instance via ssh and use the instruction in the install_Nexus.sh file to complete the setup. 
