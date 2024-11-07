@@ -1,3 +1,4 @@
+//Proper stage by stage explanation of this code is present in the architecture.md file
 pipeline {
     agent any
     tools {
