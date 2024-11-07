@@ -43,7 +43,18 @@ Responsible for taking the project through the quality gate in the SonarQube ser
 
 ## Stage 7. UploadArtifact
 Responsible for configuring and uploading a artifact to the Nexus repository
+
 **nexusVersion: 'nexus3'**:
 Mentions the Nexus version to the Jenkins server. 
 
-**nexusUrl: '172.31.4.32:8081'**
+**nexusUrl: '172.31.4.32:8081'**: 
+This mentions the URL of the nexus server. This needs to be changed to the private IP address of the Nexus instance on EC2.
+
+**repository: 'First-repo'**:
+Mentions the repository where the artifact will be stores in Nexus. This repository needs to be manually made and named in the Nexus server. Keep in mind that the repository in the nexus server needs to be the same as the one mentioned here. 
+
+**credentialsId: 'nexuslogin'**:
+This mentions the ID of the nexus login credentials which are to be made manually in the Jenkins server. Again the ID needs to have the same name here as the one in the Jenkins server. 
+
+**artifacts: [.....]**:
+Mentions the name of the artifact which needs to be stored and also the directory where its present. 
