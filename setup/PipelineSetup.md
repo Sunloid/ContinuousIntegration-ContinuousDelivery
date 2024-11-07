@@ -11,11 +11,11 @@ This file contains step by step all instructions on how to setup up this pipelin
 ## AWS SETUP
 1. **Security Groups:**
     - Jenkins: 
-        ![Alt text](<image (2).png>)
+        ![Alt text](<q2.png>)
     - SonarQube:
-        ![Alt text](<image (3).png>) 
+        ![Alt text](<q3.png>) 
     - Nexus: 
-        ![Alt text](<image (4).png>)
+        ![Alt text](<q4.png>)
 
 2. **Jenkins Instance Setup:** 
     - Create a EC2 instance with the name of Jenkins server.
