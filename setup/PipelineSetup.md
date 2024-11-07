@@ -18,21 +18,21 @@ This file contains step by step all instructions on how to setup up this pipelin
         ![Alt text](<image (4).png>)
 
 2. **Jenkins Instance Setup:** 
-- Create a EC2 instance with the name of Jenkins server.
-- Give it the Jenkins security group which you just made.
-- Use Ubuntu linux as the base image.
-- For instance type use t2.medium 
-![Alt text](<image (5).png>)
-- Click on advanced details and in the user data section copy paste the code from the install_jenkins.sh file  
-![Alt text](<image (6).png>)
-- Launch the instance. 
+    - Create a EC2 instance with the name of Jenkins server.
+    - Give it the Jenkins security group which you just made.
+    - Use Ubuntu linux as the base image.
+    - For instance type use t2.medium 
+    ![Alt text](<image (5).png>)
+    - Click on advanced details and in the user data section copy paste the code from the install_jenkins.sh file  
+    ![Alt text](<image (6).png>)
+    - Launch the instance. 
 
 3. **SonarQube Instance Setup:**
-- Create a EC2 instance with the name of SonarQube server. 
-- Give it the SonarQube security group which you just made. 
-- Use ubuntu Linux as the base image.
-- For instance type use t2.medium  
-![Alt text](<image (7).png>)
-- Click on advanced details and in the user data section copy paste the code fom the install_SonarQube.sh file
-![Alt text](<image (8).png>)
-- Launch the instance. 
+    - Create a EC2 instance with the name of SonarQube server. 
+    - Give it the SonarQube security group which you just made. 
+    - Use ubuntu Linux as the base image.
+    - For instance type use t2.medium  
+    ![Alt text](<image (7).png>)
+    - Click on advanced details and in the user data section copy paste the code fom the install_SonarQube.sh file
+    ![Alt text](<image (8).png>)
+    - Launch the instance. 
