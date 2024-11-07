@@ -10,5 +10,20 @@ This file contains step by step all instructions on how to setup up this pipelin
 
 ## AWS SETUP
 1. Security Groups:
-    - Jenkins: Inbound rules
-                ![Alt text](<image (2).png>)
+    - Jenkins: 
+        ![Alt text](<image (2).png>)
+    - SonarQube:
+        ![Alt text](<image (3).png>) 
+    - Nexus: 
+        ![Alt text](<image (4).png>)
+
+2. Jenkins Instance Setup: 
+- Create a EC2 instance with the name of Jenkins server.
+- Give it the Jenkins security group which you just made.
+- Use Ubuntu linux as the base image.
+![Alt text](<image (5).png>)
+- Click on advanced details and in the user data section copy paste the code from the install_jenkins.sh file  
+![Alt text](<image (6).png>)
+- Launch the instance. 
+
+3. SonarQube Instance Setup:
