@@ -47,6 +47,7 @@ This file contains step by step all instructions on how to setup up this pipelin
      - Now connnect to the EC2 instance via ssh and use the instruction in the install_Nexus.sh file to complete the setup. 
 
 ## Jenkins Server Setup
+    
     - Connect to the Jenkins Instance and run the command: sudo systemctl status jenkins
     - The secret key to the jenkins server will be present copy it 
     - Now use the public IP address of the jenkins along with the port to reach the Jenkins server and Install the suggested plugins. 
