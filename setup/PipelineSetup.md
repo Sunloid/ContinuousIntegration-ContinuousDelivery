@@ -63,4 +63,17 @@ This file contains step by step all instructions on how to setup up this pipelin
     ![Alt text](<image (13).png>)
     2. SonarQube: For SonarQube go to sonarqube server login with username and password (admin) then account > security and Generate a token. Copy the token and come back to Jenkins server and make a new credentials with the generated token. 
     ![Alt text](<image (14).png>)
-    
+
+## SonarQube Server Setup 
+    - There is not much setup to do in sonarqube server. 
+    - Go to quality gates on the top bar and press create. 
+    - Give it the name Bugs-100 
+    - Add condtion of bugs with the value of 100. 
+    - There will be more things to do in sonarqube once the jenkins build is run. 
+
+## Nexus Server Setup 
+    - Launch the server and complete the login with the instructions shown on the screen. 
+    - Click on setting icon on the top bar and then the create repository button. 
+    - Choose maven2 (hosted)
+    - Give the repository the name 'First-repo'
+    - save 
