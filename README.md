@@ -20,3 +20,4 @@ This repository hosts a complete CI/CD pipeline designed for Java application ut
 
 ## Getting Started
 Refer to the README Quick Start for an overview and to docs/setup/ for detailed setup instructions for each component on AWS EC2. This setup is intended to be modular, making it adaptable to various environments and scalable as project needs grow.
+
