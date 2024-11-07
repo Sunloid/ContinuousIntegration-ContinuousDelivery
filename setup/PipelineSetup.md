@@ -22,9 +22,9 @@ This file contains step by step all instructions on how to setup up this pipelin
     - Give it the Jenkins security group which you just made.
     - Use Ubuntu linux as the base image.
     - For instance type use t2.medium 
-    ![Alt text](<image (5).png>)
+    ![Alt text](<q5.png>)
     - Click on advanced details and in the user data section copy paste the code from the install_jenkins.sh file  
-    ![Alt text](<image (6).png>)
+    ![Alt text](<q6.png>)
     - Launch the instance. 
 
 3. **SonarQube Instance Setup:**
@@ -32,9 +32,9 @@ This file contains step by step all instructions on how to setup up this pipelin
     - Give it the SonarQube security group which you just made. 
     - Use ubuntu Linux as the base image.
     - For instance type use t2.medium  
-    ![Alt text](<image (7).png>)
+    ![Alt text](<q7.png>)
     - Click on advanced details and in the user data section copy paste the code fom the install_SonarQube.sh file
-    ![Alt text](<image (8).png>)
+    ![Alt text](<q8.png>)
     - Launch the instance. 
 
 4. **Nexus Instance Setup:**
@@ -42,7 +42,7 @@ This file contains step by step all instructions on how to setup up this pipelin
      - Give it the Nexus security group which you just made. 
      - Use ubuntu linux as the base image. 
      - For instance type use t2.medium. 
-     ![Alt text](<image (9).png>)
+     ![Alt text](<q9.png>)
      - Launch the instance. 
      - Now connnect to the EC2 instance via ssh and use the instruction in the install_Nexus.sh file to complete the setup. 
 
@@ -53,18 +53,18 @@ This file contains step by step all instructions on how to setup up this pipelin
 - Go to managae Jenkins install the following plugins: Pipeline stage view, Nexus artifact uploader, Sonarqube scanner, Pipeline maven Integration, pipeline utility step and Build Timestamp and install without restart
 - Go to manage Jenkins > Tools and add the following details: 
     1. OracleJDK8 Installation:
-        ![Alt text](<image (10).png>)
+        ![Alt text](<q10.png>)
     2. Apache Maven Installation: 
-        ![Alt text](<image (11).png>)
+        ![Alt text](<q11.png>)
     3. SonarQube Installation:    
-        ![Alt text](<image (12).png>)
+        ![Alt text](<q12.png>)
 - Now go Manage Jenkins > Credentials and add credentials
     1. Nexus:
-    ![Alt text](<image (13).png>)
+    ![Alt text](<q13.png>)
     2. SonarQube: For SonarQube go to sonarqube server login with username and password (admin) then account > security and Generate a token. Copy the token and come back to Jenkins server and make a new credentials with the generated token. 
-    ![Alt text](<image (14).png>)
+    ![Alt text](<q14.png>)
 - Go to Manage Jenkins > System and add the following 
-    ![Alt text](<image (17).png>)
+    ![Alt text](<q171.png>)
 
 ## SonarQube Server Setup 
  - There is not much setup to do in sonarqube server. 
