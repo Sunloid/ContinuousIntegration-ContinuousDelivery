@@ -52,9 +52,15 @@ This file contains step by step all instructions on how to setup up this pipelin
 - Now use the public IP address of the jenkins along with the port to reach the Jenkins server and Install the suggested plugins. 
 - Go to managae Jenkins install the following plugins: Pipeline stage view, Nexus artifact uploader, Sonarqube scanner, Pipeline maven Integration, pipeline utility step and Build Timestamp and install without restart
 - Go to manage Jenkins > Tools and add the following details: 
-    1. Jdk:
+    1. OracleJDK8 Installation:
         ![Alt text](<image (10).png>)
-    2. Maven: 
+    2. Apache Maven Installation: 
         ![Alt text](<image (11).png>)
-    3. SonarQube:    
+    3. SonarQube Installation:    
         ![Alt text](<image (12).png>)
+- Now go Manage Jenkins > Credentials and add credentials
+    1. Nexus:
+    ![Alt text](<image (13).png>)
+    2. SonarQube: For SonarQube go to sonarqube server login with username and password (admin) then account > security and Generate a token. Copy the token and come back to Jenkins server and make a new credentials with the generated token. 
+    ![Alt text](<image (14).png>)
+    
