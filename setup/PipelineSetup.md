@@ -37,7 +37,7 @@ This file contains step by step all instructions on how to setup up this pipelin
     ![Alt text](<image (8).png>)
     - Launch the instance. 
 
-4. **Nexus Instance Setup::**
+4. **Nexus Instance Setup:**
      - Create a EC2 instance with the name of Nexus server. 
      - Give it the Nexus security group which you just made. 
      - Use ubuntu linux as the base image. 
@@ -45,3 +45,13 @@ This file contains step by step all instructions on how to setup up this pipelin
      ![Alt text](<image (9).png>)
      - Launch the instance. 
      - Now connnect to the EC2 instance via ssh and use the instruction in the install_Nexus.sh file to complete the setup. 
+
+## Jenkins Server Setup
+    - Connect to the Jenkins Instance and run the command: sudo systemctl status jenkins
+    - The secret key to the jenkins server will be present copy it 
+    - Now use the public IP address of the jenkins along with the port to reach the Jenkins server and Install the suggested plugins. 
+    - Go to managae Jenkins install the following plugins: Pipeline stage view, Nexus artifact uploader, Sonarqube scanner, Pipeline maven Integration, pipeline utility step and Build Timestamp and install without restart
+    - Go to manage Jenkins > Tools and add the following details: 
+        ![Alt text](<image (10).png>)
+        ![Alt text](<image (11).png>)
+        ![Alt text](<image (12).png>)
